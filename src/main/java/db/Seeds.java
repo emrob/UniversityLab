@@ -10,10 +10,10 @@ import java.util.GregorianCalendar;
 public class Seeds {
 
     public static void seedData(){
-        DBHelper.deleteAll(Student.class);
         DBHelper.deleteAll(Lesson.class);
-        DBHelper.deleteAll(Course.class);
         DBHelper.deleteAll(Instructor.class);
+        DBHelper.deleteAll(Student.class);
+        DBHelper.deleteAll(Course.class);
 
         Course course1 = new Course("Electrical Engineering", "BEng", new GregorianCalendar(2018,2,12), new GregorianCalendar(19,5,2018));
         DBCourse.saveCourse(course1);

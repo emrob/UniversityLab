@@ -1,0 +1,21 @@
+<p class="pageHeader">All Students</p>
+
+<div class="container">
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Lesson</th>
+    </tr>
+    #foreach($instructor in $instructors)
+    <tr>
+        <td>$instructor.getName()</td>
+        <td>$instructor.getCourse().getTitle()</td>
+        <td>$instructor.getLesson().getTitle()</td>
+    </tr>
+    #end
+
+</table>
+</div>
+
+       

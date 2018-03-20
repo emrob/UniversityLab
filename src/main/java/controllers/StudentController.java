@@ -16,7 +16,7 @@ import static spark.SparkBase.staticFileLocation;
 public class StudentController {
     public static void main(String[] args) {
         staticFileLocation("public");
-//        ManagersController managersController = new ManagersController();
+        InstructorController instructorController = new InstructorController();
         Seeds.seedData();
 
         get("/students", (req, res)-> {
