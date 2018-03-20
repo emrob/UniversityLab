@@ -17,6 +17,8 @@ public class StudentController {
     public static void main(String[] args) {
         staticFileLocation("public");
         InstructorController instructorController = new InstructorController();
+        LessonController lessonController = new LessonController();
+
         Seeds.seedData();
 
         get("/students", (req, res)-> {

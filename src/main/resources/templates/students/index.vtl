@@ -7,7 +7,7 @@
         <th>Age</th>
         <th>Enrolment Number</th>
         <th>Course</th>
-        <th>Lesson</th>
+        <!--<th>Lesson</th>-->
     </tr>
     #foreach($student in $students)
     <tr>
@@ -15,7 +15,7 @@
         <td>$student.getAge()</td>
         <td>$student.getEnrolmentNumber()</td>
         <td>$student.getCourse().getTitle()</td>
-        <td>$student.getLesson().getTitle()</td>
+        <!--<td>$student.getLesson().getTitle()</td>-->
     </tr>
     #end
 
