@@ -1,0 +1,22 @@
+<p class="pageHeader">All Courses</p>
+<div>
+<a href="/courses/new" class="button center">New Course</a>
+</div>
+
+
+<div class="container">
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Level</th>
+    </tr>
+    #foreach($course in $courses)
+    <tr>
+        <td>$course.getTitle()</td>
+        <td>$course.getLevel()</td>
+    </tr>
+    #end
+
+</table>
+</div>
+
